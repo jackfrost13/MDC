@@ -20,7 +20,11 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  // TODO: Add text editing controllers (101)
+  // TODO: (3) Add text editing controllers (101)
+  // TODO: (4) Add onPressed property to the buttons(101)
+//  final _usernameController = TextEditingController();
+//  final _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,8 +44,43 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Wrap Username with PrimaryColorOverride (103)
             // TODO: Remove filled: true values (103)
             // TODO: Wrap Password with PrimaryColorOverride (103)
-            // TODO: Add TextField widgets (101)
-            // TODO: Add button bar (101)
+            // TODO: (1) Add TextField widgets (101)
+//            TextField(
+//              controller: _usernameController,
+//              decoration: InputDecoration(
+//                labelText: 'Username',
+//                filled: true,
+//              ),
+//            ),
+//            SizedBox(
+//              height: 12.0,
+//            ),
+//            TextField(
+//              controller: _passwordController,
+//              decoration: InputDecoration(
+//                labelText: 'Password',
+//                filled: true,
+//              ),
+//              obscureText: true,
+//            ),
+//            // TODO: (2) Add button bar (101)
+//            ButtonBar(
+//              children: <Widget>[
+//                FlatButton(
+//                  onPressed: () {
+//                    _usernameController.clear();
+//                    _passwordController.clear();
+//                  },
+//                  child: Text('Cancel'),
+//                ),
+//                RaisedButton(
+//                  child: Text('Login'),
+//                  onPressed: (){
+//                    Navigator.pop(context);
+//                  },
+//                )
+//              ],
+//            ),
           ],
         ),
       ),
