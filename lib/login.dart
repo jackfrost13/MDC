@@ -1,16 +1,3 @@
-// Copyright 2018-present the Flutter authors. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
 import 'package:flutter/material.dart';
 
@@ -20,10 +7,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  // TODO: (3) Add text editing controllers (101)
-  // TODO: (4) Add onPressed property to the buttons(101)
-//  final _usernameController = TextEditingController();
-//  final _passwordController = TextEditingController();
+
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -44,43 +30,43 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Wrap Username with PrimaryColorOverride (103)
             // TODO: Remove filled: true values (103)
             // TODO: Wrap Password with PrimaryColorOverride (103)
-            // TODO: (1) Add TextField widgets (101)
-//            TextField(
-//              controller: _usernameController,
-//              decoration: InputDecoration(
-//                labelText: 'Username',
-//                filled: true,
-//              ),
-//            ),
-//            SizedBox(
-//              height: 12.0,
-//            ),
-//            TextField(
-//              controller: _passwordController,
-//              decoration: InputDecoration(
-//                labelText: 'Password',
-//                filled: true,
-//              ),
-//              obscureText: true,
-//            ),
-//            // TODO: (2) Add button bar (101)
-//            ButtonBar(
-//              children: <Widget>[
-//                FlatButton(
-//                  onPressed: () {
-//                    _usernameController.clear();
-//                    _passwordController.clear();
-//                  },
-//                  child: Text('Cancel'),
-//                ),
-//                RaisedButton(
-//                  child: Text('Login'),
-//                  onPressed: (){
-//                    Navigator.pop(context);
-//                  },
-//                )
-//              ],
-//            ),
+
+            TextField(
+              controller: _usernameController,
+              decoration: InputDecoration(
+                labelText: 'Username',
+                filled: true,
+              ),
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            TextField(
+              controller: _passwordController,
+              decoration: InputDecoration(
+                labelText: 'Password',
+                filled: true,
+              ),
+              obscureText: true,
+            ),
+
+            ButtonBar(
+              children: <Widget>[
+                FlatButton(
+                  onPressed: () {
+                    _usernameController.clear();
+                    _passwordController.clear();
+                  },
+                  child: Text('Cancel'),
+                ),
+                RaisedButton(
+                  child: Text('Login'),
+                  onPressed: (){
+                    Navigator.pop(context);
+                  },
+                )
+              ],
+            ),
           ],
         ),
       ),
